@@ -1,0 +1,7 @@
+subject,transition_threat,correct_rejections,false_alarms,hits,misses
+a273wocs111dh0,contains_threat,98,5,18,7
+a273wocs111dh0,no_threat,53,4,14,1
+a3eqr9c0l23o6e,contains_threat,104,0,23,1
+a3eqr9c0l23o6e,no_threat,53,4,14,1
+ax8nxtt8qmghc,contains_threat,100,4,22,2
+ax8nxtt8qmghc,no_threat,55,1,16,0
