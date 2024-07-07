@@ -1,0 +1,474 @@
+
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>Network Task</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/common/jquery-3.4.1.js"></script>
+    <script src="js/common/underscore_min.js"></script>
+    <!-- task related scripts -->
+    <script src="js/task/instructions.js"></script>
+    <script src="js/task/networkFunctions.js"></script>
+    <script src="js/task/oddOneOutTest.js"></script>
+    <script src="js/task/networkDragTask.js"></script>
+    <script src="js/task/practiceIllegalTransitionTask.js"></script>
+    <script src="js/task/illegalTransitionTask.js"></script>
+    <script src="js/task/miscFunctions.js"></script>
+    <script src="js/task/main.js"></script>
+    <script src="js/task/images.js"></script>
+    <script src ="js/task/dataLogging.js"></script>
+    <script src ="js/task/generalTaskFunctions.js"></script>
+    <!-- demographics, data submission, etc -->
+    <script type="text/javascript" src ="js/experimentWrapper.js"></script>
+  </head>
+
+  <body>
+    <div id="demographicsForm">
+      <p>Please take a few seconds to answer the demographic questions below:</p>
+
+    	<p class="selectTitle"> <b>Gender:</b> </p>
+    	<select class="demoSelect" id="gender" onchange="demoChange()">
+        <option value="Blank"></option>
+    		<option value="F">Female</option>
+    		<option value="M">Male</option>
+    		<option value="NA">Do not wish to respond</option>
+    	</select>
+
+    	<p class="selectTitle"><b>Age:</b> <span style="font-size: 20px">(Leave blank if you do not wish to respond)</span></p>
+	    <input class="demoSelect" id="age" name="Age" value=""></input>
+
+    	<p class="selectTitle"><b>Ethnicity:</b></p>
+    	<select class="demoSelect" id="ethnicity" onchange="demoChange()">
+        <option value="Blank"></option>
+    		<option value="HL">Hispanic/Latino</option>
+    		<option value="NHL">Non-Hispanic/Latino</option>
+    		<option value="NA">Do not wish to respond</option>
+    	</select>
+
+    	<p class="selectTitle"><b>Race:</b></p>
+    	<select class="demoSelect" id="race" onchange="demoChange()">
+        <option value="Blank"></option>
+    		<option value="AI">American Indian/Alaska Native</option>
+    		<option value="A">Asian</option>
+    		<option value="NH">Native Hawaiian/Other Pacific Islander</option>
+    		<option value="AA">African American/Black</option>
+    		<option value="W">Caucasian/White</option>
+    		<option value="M">Multiracial</option>
+    		<option value="O">Other</option>
+    		<option value="NA">Do not wish to respond</option>
+    	</select>
+      <br>
+      <br>
+    	<button id="demographicSubmit">Submit</button>
+    </div>
+    <table id="table">
+      <tr>
+        <td>
+          <p id="instruction" style="font-family: arial; font-size: 40px;"></p>
+          <p id="NoGo" style="font-family: arial; color: black; font-size: 40px;"></p>
+          <form id="mturk_form" method="POST" action="https://dibs-web01.vm.duke.edu/AMTSubmit/DataHandler_MTurk_RG.php">
+            <!-- <form id="mturk_form" method="POST" action="https://workersandbox.mturk.com/mturk/externalSubmit"> -->
+            <!-- <form id="mturk_form" method="POST" action="https://wwww.mturk.com/mturk/externalSubmit"> -->
+            <input type="hidden" id="assignmentId" name="assignmentId" value="">
+            <input type="hidden" id="workerId" name="workerId" value="">
+            <input type="hidden" id="hitId" name="hitId" value="">
+            <input type="hidden" id="RTs" name="RTs" value="">
+            <input type="hidden" id="demographics" name="demographics" value="">
+            <input type="hidden" id="STAI_data" name="STAI_data" value="">
+            <input type="hidden" id="ExpName" name="ExpName" value="Anxiety-CC">
+            <p style="font-size:22px; margin-left: 50px; margin-right:50px;">
+              Thank you for participating in this study, which investigates how people are able to learn associations between stimuli. In this task, you were presented with a series of  images that belonged to one of two clusters. We were interested in seeing if people are able to learn this structure, and how individual levels of anxiety related to learning the location of threatening versus neutral images faster and more accurately.
+            </p>
+            <p style="font-size:22px; margin-left: 50px; margin-right:50px;">
+              If you would like to know more about or have any other questions about this experiment or your data, please feel free to contact me at egner.lab.studies@gmail.com. Thank you so much for your participation!
+            </p>
+            <p style="font-size:24px">
+              Please click the "Submit" button to submit your data.
+            </p>
+            <input id="submitButton" type="submit" name="Finish" value="Submit">
+          </form>
+        </td>
+      </tr>
+    </table>
+    <div id="soundCheck">
+      <p> Welcome to the experiment, thank you for your participation!</p>
+      <br>
+      <p> This task may involve audio feedback. Please complete the sound check below before proceeding. </p>
+      <br>
+      <p> Play the audio file below and select which word is spoken. </p>
+      <audio controls>
+        <source src="sounds/chicken.wav" type="audio/wav">
+        Your browser does not support the audio element. Please return this HIT or try again with a different browser.
+      </audio>
+      <br>
+      <br>
+      <div id="questionChoicesHolder">
+        <div id="questionChoices">
+          <input class="soundCheckInput" type="checkbox" id="sc1"/>
+          <label for="sc1">Apple</label></br>
+          <input class="soundCheckInput" type="checkbox" id="sc2"/>
+          <label for="sc2">Chicken</label></br>
+          <input class="soundCheckInput" type="checkbox" id="sc3"/>
+          <label for="sc3">Watermelon</label></br>
+          <input class="soundCheckInput" type="checkbox" id="sc4"/>
+          <label for="sc4">Horse</label></br>
+          <input class="soundCheckInput" type="checkbox" id="sc5"/>
+          <label for="sc5">Banana</label></br>
+          <input class="soundCheckInput" type="checkbox" id="sc6"/>
+          <label for="sc6">Strawberry</label></br>
+          <input class="soundCheckInput" type="checkbox" id="sc7"/>
+          <label for="sc7">Cow</label></br>
+          <input class="soundCheckInput" type="checkbox" id="sc8"/>
+          <label for="sc8">Pig</label></br>
+        </div>
+      </div>
+      <input id="soundCheckSubmit" type="submit" name="soundCheckSubmit" value="Submit">
+    </div>
+    <!-- instruction elements for all text screens -->
+    <div id="instructionsDiv">
+      <div class="instruction-content">
+        <div class="instruction-header">
+          <h1>Instructions </h1>
+          <p style="font-weight: bold">Please read these instructions carefully.</p>
+        </div>
+        <div class="instruction-body">
+          <p id="instructions1" ></p>
+          <p id="instructions2" ></p>
+          <p id="instructions3" ></p>
+          <p id="instructions4" ></p>
+          <p id="instructions5" ></p>
+          <p id="instructions6" ></p>
+          <p id="instructions7" ></p>
+          <p id="instructions8" ></p>
+          <p id="instructions9" ></p>
+        </div>
+        <div class="instruction-buttons">
+          <button id="nextInstrButton">Next</button>
+          <button id="startExpButton">Start Experiment</button>
+          <button id="nextSectionButton">Next Section</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="STAI_div">
+      <h1>Anxiety Questionnaire</h1>
+      <div id="STAI_instructions" style = "position:relative; right:210px; top:2px; margin-top:30px; margin-bottom:50px;">
+        <p>Please take a moment to complete the questionnaire below.</p>
+        <p>A number of statements which people have used to describe themselves are given below.</p>
+        <p>Read each statement and then click on the appropriate statement to indicate how you <em>generally</em> feel.</p>
+      </div>
+
+      <form name="STAI" id="STAI">
+
+        <div class="STAI_question" id="STAI_question1">
+          <p>1.&nbsp I feel pleasant.</p>
+          <p><input class = "option_1" type="radio" name="question1" value="1"> <b>1.&nbsp;</b>  Almost Never</p>
+          <p><input class = "option_2" type="radio" name="question1" value="2"> <b>2.&nbsp;</b> Sometimes</p>
+          <p><input class = "option_3" type="radio" name="question1" value="3"> <b>3.&nbsp;</b> Often</p>
+          <p><input class = "option_4" type="radio" name="question1" value="4"> <b>4.&nbsp;</b> Almost Always</p>
+          <p><input class = "option_5" type="radio" name="question1" value="5"> <b>5.&nbsp;</b> Do not wish to respond</p>
+        </div>
+
+        <div class="STAI_question" id="STAI_question2" style="margin-top:40px;">
+          <p>2.&nbsp I feel nervous and restless.</p>
+          <p><input class = "option_1" type="radio" name="question2" value="1"> <b>1.&nbsp;</b>  Almost Never</p>
+          <p><input class = "option_2" type="radio" name="question2" value="2"> <b>2.&nbsp;</b> Sometimes</p>
+          <p><input class = "option_3" type="radio" name="question2" value="3"> <b>3.&nbsp;</b> Often</p>
+          <p><input class = "option_4" type="radio" name="question2" value="4"> <b>4.&nbsp;</b> Almost Always</p>
+          <p><input class = "option_5" type="radio" name="question2" value="5"> <b>5.&nbsp;</b> Do not wish to respond</p>
+        </div>
+
+        <div class="STAI_question" id="STAI_question3" style="margin-top:40px;">
+          <p>3.&nbsp I feel satisfied with myself.</p>
+          <p><input class = "option_1" type="radio" name="question3" value="1"> <b>1.&nbsp;</b>  Almost Never</p>
+          <p><input class = "option_2" type="radio" name="question3" value="2"> <b>2.&nbsp;</b> Sometimes</p>
+          <p><input class = "option_3" type="radio" name="question3" value="3"> <b>3.&nbsp;</b> Often</p>
+          <p><input class = "option_4" type="radio" name="question3" value="4"> <b>4.&nbsp;</b> Almost Always</p>
+          <p><input class = "option_5" type="radio" name="question3" value="5"> <b>5.&nbsp;</b> Do not wish to respond</p>
+        </div>
+
+        <div class="STAI_question" id="STAI_question4" style="margin-top:40px;">
+          <p>4.&nbsp I wish I could be as happy as others seem to be.</p>
+          <p><input class = "option_1" type="radio" name="question4" value="1"> <b>1.&nbsp;</b>  Almost Never</p>
+          <p><input class = "option_2" type="radio" name="question4" value="2"> <b>2.&nbsp;</b> Sometimes</p>
+          <p><input class = "option_3" type="radio" name="question4" value="3"> <b>3.&nbsp;</b> Often</p>
+          <p><input class = "option_4" type="radio" name="question4" value="4"> <b>4.&nbsp;</b> Almost Always</p>
+          <p><input class = "option_5" type="radio" name="question4" value="5"> <b>5.&nbsp;</b> Do not wish to respond</p>
+        </div>
+
+        <div class="STAI_question" id="STAI_question5" style="margin-top:40px;">
+          <p>5.&nbsp I feel like a failure.</p>
+          <p><input class = "option_1" type="radio" name="question5" value="1"> <b>1.&nbsp;</b>  Almost Never</p>
+          <p><input class = "option_2" type="radio" name="question5" value="2"> <b>2.&nbsp;</b> Sometimes</p>
+          <p><input class = "option_3" type="radio" name="question5" value="3"> <b>3.&nbsp;</b> Often</p>
+          <p><input class = "option_4" type="radio" name="question5" value="4"> <b>4.&nbsp;</b> Almost Always</p>
+          <p><input class = "option_5" type="radio" name="question5" value="5"> <b>5.&nbsp;</b> Do not wish to respond</p>
+        </div>
+
+        <div class="STAI_question" id="STAI_question6" style="margin-top:40px;">
+          <p>6.&nbsp I feel rested.</p>
+          <p><input class = "option_1" type="radio" name="question6" value="1"> <b>1.&nbsp;</b>  Almost Never</p>
+          <p><input class = "option_2" type="radio" name="question6" value="2"> <b>2.&nbsp;</b> Sometimes</p>
+          <p><input class = "option_3" type="radio" name="question6" value="3"> <b>3.&nbsp;</b> Often</p>
+          <p><input class = "option_4" type="radio" name="question6" value="4"> <b>4.&nbsp;</b> Almost Always</p>
+          <p><input class = "option_5" type="radio" name="question6" value="5"> <b>5.&nbsp;</b> Do not wish to respond</p>
+        </div>
+
+        <div class="STAI_question" id="STAI_question7" style="margin-top:40px;">
+          <p>7.&nbsp I am "calm, cool, and collected."</p>
+          <p><input class = "option_1" type="radio" name="question7" value="1"> <b>1.&nbsp;</b>  Almost Never</p>
+          <p><input class = "option_2" type="radio" name="question7" value="2"> <b>2.&nbsp;</b> Sometimes</p>
+          <p><input class = "option_3" type="radio" name="question7" value="3"> <b>3.&nbsp;</b> Often</p>
+          <p><input class = "option_4" type="radio" name="question7" value="4"> <b>4.&nbsp;</b> Almost Always</p>
+          <p><input class = "option_5" type="radio" name="question7" value="5"> <b>5.&nbsp;</b> Do not wish to respond</p>
+        </div>
+
+        <div class="STAI_question" id="STAI_question8" style="margin-top:40px;">
+          <p>8.&nbsp I feel that difficulties are piling up so that I cannot overcome them.</p>
+          <p><input class = "option_1" type="radio" name="question8" value="1"> <b>1.&nbsp;</b>  Almost Never</p>
+          <p><input class = "option_2" type="radio" name="question8" value="2"> <b>2.&nbsp;</b> Sometimes</p>
+          <p><input class = "option_3" type="radio" name="question8" value="3"> <b>3.&nbsp;</b> Often</p>
+          <p><input class = "option_4" type="radio" name="question8" value="4"> <b>4.&nbsp;</b> Almost Always</p>
+          <p><input class = "option_5" type="radio" name="question8" value="5"> <b>5.&nbsp;</b> Do not wish to respond</p>
+        </div>
+
+        <div class="STAI_question" id="STAI_question9" style="margin-top:40px;">
+          <p>9.&nbsp I worry too much over something that really doesn't matter.</p>
+          <p><input class = "option_1" type="radio" name="question9" value="1"> <b>1.&nbsp;</b>  Almost Never</p>
+          <p><input class = "option_2" type="radio" name="question9" value="2"> <b>2.&nbsp;</b> Sometimes</p>
+          <p><input class = "option_3" type="radio" name="question9" value="3"> <b>3.&nbsp;</b> Often</p>
+          <p><input class = "option_4" type="radio" name="question9" value="4"> <b>4.&nbsp;</b> Almost Always</p>
+          <p><input class = "option_5" type="radio" name="question9" value="5"> <b>5.&nbsp;</b> Do not wish to respond</p>
+        </div>
+
+        <div class="STAI_question" id="STAI_question10" style="margin-top:40px;">
+          <p>10.&nbsp I am happy.</p>
+          <p><input class = "option_1" type="radio" name="question10" value="1"> <b>1.&nbsp;</b>  Almost Never</p>
+          <p><input class = "option_2" type="radio" name="question10" value="2"> <b>2.&nbsp;</b> Sometimes</p>
+          <p><input class = "option_3" type="radio" name="question10" value="3"> <b>3.&nbsp;</b> Often</p>
+          <p><input class = "option_4" type="radio" name="question10" value="4"> <b>4.&nbsp;</b> Almost Always</p>
+          <p><input class = "option_5" type="radio" name="question10" value="5"> <b>5.&nbsp;</b> Do not wish to respond</p>
+        </div>
+
+        <div class="STAI_question" id="STAI_question11" style="margin-top:40px;">
+          <p>11.&nbsp I have disturbing thoughts.</p>
+          <p><input class = "option_1" type="radio" name="question11" value="1"> <b>1.&nbsp;</b>  Almost Never</p>
+          <p><input class = "option_2" type="radio" name="question11" value="2"> <b>2.&nbsp;</b> Sometimes</p>
+          <p><input class = "option_3" type="radio" name="question11" value="3"> <b>3.&nbsp;</b> Often</p>
+          <p><input class = "option_4" type="radio" name="question11" value="4"> <b>4.&nbsp;</b> Almost Always</p>
+          <p><input class = "option_5" type="radio" name="question11" value="5"> <b>5.&nbsp;</b> Do not wish to respond</p>
+        </div>
+
+        <div class="STAI_question" id="STAI_question12" style="margin-top:40px;">
+          <p>12.&nbsp I lack self-confidence.</p>
+          <p><input class = "option_1" type="radio" name="question12" value="1"> <b>1.&nbsp;</b>  Almost Never</p>
+          <p><input class = "option_2" type="radio" name="question12" value="2"> <b>2.&nbsp;</b> Sometimes</p>
+          <p><input class = "option_3" type="radio" name="question12" value="3"> <b>3.&nbsp;</b> Often</p>
+          <p><input class = "option_4" type="radio" name="question12" value="4"> <b>4.&nbsp;</b> Almost Always</p>
+          <p><input class = "option_5" type="radio" name="question12" value="5"> <b>5.&nbsp;</b> Do not wish to respond</p>
+        </div>
+
+        <div class="STAI_question" id="STAI_question13" style="margin-top:40px;">
+          <p>13.&nbsp I feel secure.</p>
+          <p><input class = "option_1" type="radio" name="question13" value="1"> <b>1.&nbsp;</b>  Almost Never</p>
+          <p><input class = "option_2" type="radio" name="question13" value="2"> <b>2.&nbsp;</b> Sometimes</p>
+          <p><input class = "option_3" type="radio" name="question13" value="3"> <b>3.&nbsp;</b> Often</p>
+          <p><input class = "option_4" type="radio" name="question13" value="4"> <b>4.&nbsp;</b> Almost Always</p>
+          <p><input class = "option_5" type="radio" name="question13" value="5"> <b>5.&nbsp;</b> Do not wish to respond</p>
+        </div>
+
+        <div class="STAI_question" id="STAI_question14" style="margin-top:40px;">
+          <p>14.&nbsp I make decisions easily.</p>
+          <p><input class = "option_1" type="radio" name="question14" value="1"> <b>1.&nbsp;</b>  Almost Never</p>
+          <p><input class = "option_2" type="radio" name="question14" value="2"> <b>2.&nbsp;</b> Sometimes</p>
+          <p><input class = "option_3" type="radio" name="question14" value="3"> <b>3.&nbsp;</b> Often</p>
+          <p><input class = "option_4" type="radio" name="question14" value="4"> <b>4.&nbsp;</b> Almost Always</p>
+          <p><input class = "option_5" type="radio" name="question14" value="5"> <b>5.&nbsp;</b> Do not wish to respond</p>
+        </div>
+
+        <div class="STAI_question" id="STAI_question15" style="margin-top:40px;">
+          <p>15.&nbsp I feel inadequate.</p>
+          <p><input class = "option_1" type="radio" name="question15" value="1"> <b>1.&nbsp;</b>  Almost Never</p>
+          <p><input class = "option_2" type="radio" name="question15" value="2"> <b>2.&nbsp;</b> Sometimes</p>
+          <p><input class = "option_3" type="radio" name="question15" value="3"> <b>3.&nbsp;</b> Often</p>
+          <p><input class = "option_4" type="radio" name="question15" value="4"> <b>4.&nbsp;</b> Almost Always</p>
+          <p><input class = "option_5" type="radio" name="question15" value="5"> <b>5.&nbsp;</b> Do not wish to respond</p>
+        </div>
+
+        <div class="STAI_question" id="STAI_question16" style="margin-top:40px;">
+          <p>16.&nbsp I am content.</p>
+          <p><input class = "option_1" type="radio" name="question16" value="1"> <b>1.&nbsp;</b>  Almost Never</p>
+          <p><input class = "option_2" type="radio" name="question16" value="2"> <b>2.&nbsp;</b> Sometimes</p>
+          <p><input class = "option_3" type="radio" name="question16" value="3"> <b>3.&nbsp;</b> Often</p>
+          <p><input class = "option_4" type="radio" name="question16" value="4"> <b>4.&nbsp;</b> Almost Always</p>
+          <p><input class = "option_5" type="radio" name="question16" value="5"> <b>5.&nbsp;</b> Do not wish to respond</p>
+        </div>
+
+        <div class="STAI_question" id="STAI_question17" style="margin-top:40px;">
+          <p>17.&nbsp Some unimportant thought runs through my mind and bothers me.</p>
+          <p><input class = "option_1" type="radio" name="question17" value="1"> <b>1.&nbsp;</b>  Almost Never</p>
+          <p><input class = "option_2" type="radio" name="question17" value="2"> <b>2.&nbsp;</b> Sometimes</p>
+          <p><input class = "option_3" type="radio" name="question17" value="3"> <b>3.&nbsp;</b> Often</p>
+          <p><input class = "option_4" type="radio" name="question17" value="4"> <b>4.&nbsp;</b> Almost Always</p>
+          <p><input class = "option_5" type="radio" name="question17" value="5"> <b>5.&nbsp;</b> Do not wish to respond</p>
+        </div>
+
+        <div class="STAI_question" id="STAI_question18" style="margin-top:40px;">
+          <p>18.&nbsp I take disappointments so keenly that I can't put them out of my mind.</p>
+          <p><input class = "option_1" type="radio" name="question18" value="1"> <b>1.&nbsp;</b>  Almost Never</p>
+          <p><input class = "option_2" type="radio" name="question18" value="2"> <b>2.&nbsp;</b> Sometimes</p>
+          <p><input class = "option_3" type="radio" name="question18" value="3"> <b>3.&nbsp;</b> Often</p>
+          <p><input class = "option_4" type="radio" name="question18" value="4"> <b>4.&nbsp;</b> Almost Always</p>
+          <p><input class = "option_5" type="radio" name="question18" value="5"> <b>5.&nbsp;</b> Do not wish to respond</p>
+        </div>
+
+        <div class="STAI_question" id="STAI_question19" style="margin-top:40px;">
+          <p>19.&nbsp I am a steady person.</p>
+          <p><input class = "option_1" type="radio" name="question19" value="1"> <b>1.&nbsp;</b>  Almost Never</p>
+          <p><input class = "option_2" type="radio" name="question19" value="2"> <b>2.&nbsp;</b> Sometimes</p>
+          <p><input class = "option_3" type="radio" name="question19" value="3"> <b>3.&nbsp;</b> Often</p>
+          <p><input class = "option_4" type="radio" name="question19" value="4"> <b>4.&nbsp;</b> Almost Always</p>
+          <p><input class = "option_5" type="radio" name="question19" value="5"> <b>5.&nbsp;</b> Do not wish to respond</p>
+        </div>
+
+        <div class="STAI_question" id="STAI_question20" style="margin-top:40px; margin-bottom:45px;">
+          <p>20.&nbsp I get in a state of tension or turmoil as I think over my recent concerns and interests.</p>
+          <p><input class = "option_1" type="radio" name="question20" value="1"> <b>1.&nbsp;</b>  Almost Never</p>
+          <p><input class = "option_2" type="radio" name="question20" value="2"> <b>2.&nbsp;</b> Sometimes</p>
+          <p><input class = "option_3" type="radio" name="question20" value="3"> <b>3.&nbsp;</b> Often</p>
+          <p><input class = "option_4" type="radio" name="question20" value="4"> <b>4.&nbsp;</b> Almost Always</p>
+          <p><input class = "option_5" type="radio" name="question20" value="5"> <b>5.&nbsp;</b> Do not wish to respond</p>
+        </div>
+      </form>
+      <input id="STAI_submit" type="submit" name="STAI_submit" value="Submit Responses">
+    </div>
+
+
+    <div id="oddOneOutTaskDiv">
+      <div class="OO_task_text">
+        <p id="OO_task_instruction">Click on the image that doesn't belong with the others.</p>
+      </div>
+      <ul id="OO_images">
+        <div class="OO_image_container">
+          <input id="OO_image1" class="OO_image" type="image" ondragstart="return false;">
+        </div>
+        <div class="OO_image_container">
+          <input id="OO_image2" class="OO_image" type="image" ondragstart="return false;">
+        </div>
+        <div class="OO_image_container">
+          <input id="OO_image3" class="OO_image" type="image" ondragstart="return false;">
+        </div>
+      </ul>
+    </div>
+    <div class="canvasas">
+      <canvas id="taskCanvas" width="800" height="600"></canvas>
+      <canvas id="networkCanvas" width="800" height="600"></canvas>
+    </div>
+    <div id="navButtons">
+      <button id="navNetworkLearning" class="navButton">Jump to Network Learning Task (1)</button>
+      <button id="navOddOneOut" class="navButton">Jump to Odd One Out Task (2)</button>
+    </div>
+    <div id="networkDragTask">
+      <div id="picture-container">
+      </div>
+      <div id="network-container-lg">
+        <!-- left side community -->
+        <div class="w600 community-container">
+          <div id="left-community">
+            <div class= "lgW net-slot buff-left-lg">
+              <div class="picture-holder">
+                <div class="lgW lgH slot" id="slot2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="lgW lgH slot" id="slot1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+              </div>
+            </div>
+            <div class= "net-slot">
+              <div class="picture-holder">
+                <div class="lgW lgH slot" id="slot3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="lgW lgH slot" id="slot0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+              </div>
+            </div>
+            <div class= "net-slot">
+              <div class="picture-holder">
+                <div class="lgW lgH slot" id="slot4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- right side community -->
+        <div class="w600 community-container">
+          <div id="right-community">
+            <div class= "net-slot">
+              <div class="picture-holder">
+                <div class="lgW lgH slot" id="slot5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+              </div>
+            </div>
+            <div class= "net-slot">
+              <div class="picture-holder">
+                <div class="lgW lgH slot" id="slot6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="lgW lgH slot" id="slot9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+              </div>
+            </div>
+            <div class= "lgW net-slot buff-right-lg">
+              <div class="picture-holder">
+                <div class="lgW lgH slot" id="slot7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="lgW lgH slot" id="slot8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="networkDragNextTrial" class="dragTaskButton">Next Trial</button>
+      <button id="networkDragCheckAnswer" class="dragTaskButton">Check Answer</button>
+    </div>
+    <div id="network-diagram">
+      <div id="network-container-sm">
+        <div class="w400 community-container">
+          <div id="left-community">
+            <div class= "smW net-slot buff-left-sm">
+              <div class="picture-holder">
+                <div class="smW smH slot" id="plot2"></div>
+                <div class="smW smH slot" id="plot1"></div>
+              </div>
+            </div>
+            <div class= "net-slot">
+              <div class="picture-holder">
+                <div class="smW smH slot" id="plot3"></div>
+                <div class="smW smH slot" id="plot0"></div>
+              </div>
+            </div>
+            <div class= "net-slot">
+              <div class="picture-holder">
+                <div class="smW smH slot" id="plot4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- right side community -->
+        <div class="w400 community-container">
+          <div id="right-community">
+            <div class= "net-slot">
+              <div class="picture-holder">
+                <div class="smW smH slot" id="plot5"></div>
+              </div>
+            </div>
+            <div class= "net-slot">
+              <div class="picture-holder">
+                <div class="smW smH slot" id="plot6"></div>
+                <div class="smW smH slot" id="plot9"></div>
+              </div>
+            </div>
+            <div class= "smW net-slot buff-right-sm">
+              <div class="picture-holder">
+                <div class="smW smH slot" id="plot7"></div>
+                <div class="smW smH slot" id="plot8"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
