@@ -1,26 +1,17 @@
 #This script calculates the anxiety scores for participants.
 
 #set-up
-setwd("~/Documents/GitHub/Influence-of-Anxiety-and-Threat-on-Cognitive-Map-Learning")
+setwd("~/Documents/GitHub/Anxiety_CognitiveMaps_Preprint")
 library(tidyverse)
 library(dplyr)
 
 #BE SURE TO EDIT PATH NAMES EACH TIME YOU RUN SCRIPT
 
 #path references
-data_path <- '/Users/brookesevchik/Box/Data/Anxiety_Cognitive_Maps/all_participants/STAIscores.csv' #EDIT PATH NAME EACH TIME
+data_path <- '/Users/brookesevchik/Documents/GitHub/Anxiety_CognitiveMaps_Preprint/original_STAI_data_df' #EDIT PATH NAME EACH TIME
 
 #load data
 STAI_df <- read_csv(data_path)
-
-#manipulate df into proper format
-colnames(STAI_df) <- c('not_included', 'subjectID', paste0('s', 1:20))
-num_rows = nrow(STAI_df)
-num_rows
-
-STAI_df <- STAI_df %>%
-  slice(2:num_rows) %>%
-  select('subjectID', 's1', 's2', 's3', 's4', 's5', 's6', 's7', 's8', 's9', 's10', 's11', 's12', 's13', 's14', 's15', 's16', 's17', 's18', 's19', 's20')
 
 #getting STAI scores into numeric form
 STAI_df <- transform(STAI_df,s1 = as.numeric(s1))
@@ -97,6 +88,7 @@ STAI_df
 excluded_subjects <- read_csv('data/excludedSubjects.csv')
 STAI_df <- STAI_df %>%
   filter(!subjectID %in% excluded_subjects$subject)
+STAI_df
 
 #save out the file
 write.csv(STAI_df, 'data/STAI.csv')
