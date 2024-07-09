@@ -1,6 +1,6 @@
 #This script manipulates the data frame for drag task analyses, then also runs the ANOVA to determine statistical significance and creates plots for drag task.
 
-setwd("~/Documents/GitHub/Influence-of-Anxiety-and-Threat-on-Cognitive-Map-Learning")
+setwd("~/Documents/GitHub/Anxiety_CognitiveMaps_Preprint")
 library(plotrix)
 library(ggplot2)
 library(gridExtra)
@@ -9,7 +9,7 @@ library(readr)
 library(ggplot2)
 library(tidyr)
 
-df <- read_csv('/Users/brookesevchik/Box/Data/Anxiety_Cognitive_Maps/all_participants/combinedData_Anxiety_Cognitive_Maps.csv')
+df <- read_csv('/Users/brookesevchik/Documents/GitHub/Anxiety_CognitiveMaps_Preprint/original_data')
 
 check_answer_df_1 <- df %>%
   filter(sectionType == 'dragTaskCheckAnswerEvent') %>%
@@ -106,7 +106,7 @@ average_scores_1 <- first_correct_no_further_mistakes_df_1 %>%
   group_by(subject, src) %>%
   summarise(n_trials = n(),
             score = mean(first_correct_no_further_mistakes_1))
-write_csv(average_scores_1, 'data/dragTask/averageScores.csv')
+write_csv(average_scores_1, 'data/dragTask/averageScores_1.csv')
 
 #last step, group by just src to find mean accuracy score for each image (collapse across participants)
 src_average_scores_1 <- average_scores_1 %>%
@@ -114,7 +114,7 @@ src_average_scores_1 <- average_scores_1 %>%
   summarise(score_mean = mean(score), 
             score_sem = std.error(score)) %>% 
   mutate(condition = ifelse(grepl("threat", src), "threat", "neutral"))
-write_csv(src_average_scores_1, 'data/dragTask/SRCaverageScores.csv')
+write_csv(src_average_scores_1, 'data/dragTask/SRCaverageScores_1.csv')
 
 #plot (without anxiety scores)
 drag_task_box_plot_1 <- ggplot(src_average_scores_1, aes(x = condition, y = score_mean, fill=condition)) +
