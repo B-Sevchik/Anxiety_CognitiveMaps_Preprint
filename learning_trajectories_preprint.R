@@ -2,7 +2,7 @@ library(tidyverse)
 library(dplyr)
 
 #load in check_answer_df
-setwd("~/Documents/GitHub/Influence-of-Anxiety-and-Threat-on-Cognitive-Map-Learning")
+setwd("~/Documents/GitHub/Anxiety_CognitiveMaps_Preprint")
 check_answer_df <- read_csv('data/checkAnswer.csv')
 check_answer_df
 
