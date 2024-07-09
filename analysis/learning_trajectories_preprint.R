@@ -2,8 +2,9 @@ library(tidyverse)
 library(dplyr)
 
 #load in check_answer_df
+#SET WORKING DIRECTORY TO WHAT YOU WANT IT TO BE!
 setwd("~/Documents/GitHub/Anxiety_CognitiveMaps_Preprint")
-check_answer_df <- read_csv('data/checkAnswer.csv')
+check_answer_df <- read_csv('data/dragTask/checkAnswer.csv') #MAY HAVE TO EDIT THIS DATA PATH IN CORRESPONDENCE TO WHERE checkAnswer.csv (can download from GitHub), is stored on your computer.
 check_answer_df
 
 attempts_per_trial <- check_answer_df %>% 

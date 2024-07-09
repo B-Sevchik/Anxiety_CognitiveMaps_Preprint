@@ -2,14 +2,12 @@
 #It also excludes the subjects for not meeting requirements for each of the three tasks.
 #Run preprocess before you run any other script.
 
-#SET WORKING DIRECTORY TO WHAT YOU WANT IT TO BE!
 setwd("~/Documents/GitHub/Anxiety_CognitiveMaps_Preprint")
 
 library (dplyr)
 library(tidyverse)
 
-#CHANGE DATA PATH TO WHERE THE FILE WITH THE ORIGINAL DATA FILE YOU PULLED FROM GITHUB IS STORED ON YOUR COMPUTER!
-df <- read_csv('[INSERT DATA PATH]') #In Github, this is the 'original_data' file
+df <- read_csv('/Users/brookesevchik/Documents/GitHub/Anxiety_CognitiveMaps_Preprint/original_data')
 
 #DRAG TASK exclude people from drag task if they have reached the 10th trial and still haven't learned it
 drag_df <- df %>%

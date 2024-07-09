@@ -1,5 +1,6 @@
 ##This script manipulates the data frame for illegal transition task analyses, then also runs the ANOVA to determine statistical significance and creates plots for illegal transition task.
 
+#SET WORKING DIRECTORY TO WHAT YOU WANT IT TO BE!
 setwd("~/Documents/GitHub/Anxiety_CognitiveMaps_Preprint")
 library(plotrix)
 library(ggplot2)
@@ -13,7 +14,8 @@ library(psycho)
 library(broom)
 
 #path reference
-data_path <- '/Users/brookesevchik/Documents/GitHub/Anxiety_CognitiveMaps_Preprint/original_data' 
+#CHANGE DATA PATH TO WHERE THE FILE WITH THE ORIGINAL DATA FILE YOU PULLED FROM GITHUB IS STORED ON YOUR COMPUTER!
+data_path <- '[INSERT DATA PATH]' #In Github, this is the 'original_data' file
 
 #load data
 df <- read_csv(data_path)

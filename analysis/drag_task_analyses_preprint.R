@@ -1,5 +1,6 @@
 #This script manipulates the data frame for drag task analyses, then also runs the ANOVA to determine statistical significance and creates plots for drag task.
 
+#SET WORKING DIRECTORY TO WHAT YOU WANT IT TO BE!
 setwd("~/Documents/GitHub/Anxiety_CognitiveMaps_Preprint")
 library(plotrix)
 library(ggplot2)
@@ -9,7 +10,8 @@ library(readr)
 library(ggplot2)
 library(tidyr)
 
-df <- read_csv('/Users/brookesevchik/Documents/GitHub/Anxiety_CognitiveMaps_Preprint/original_data')
+#CHANGE DATA PATH TO WHERE THE FILE WITH THE ORIGINAL DATA FILE YOU PULLED FROM GITHUB IS STORED ON YOUR COMPUTER!
+df <- read_csv('[INSERT DATA PATH') #In Github, this is the 'original_data' file
 
 check_answer_df <- df %>%
   filter(sectionType == 'dragTaskCheckAnswerEvent') %>%
