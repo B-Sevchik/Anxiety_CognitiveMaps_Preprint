@@ -1,6 +1,6 @@
 ##This script manipulates the data frame for odd one out task analyses, then also runs the ANOVA to determine statistical significance and creates plots for the odd one out task.
 
-setwd("~/Documents/GitHub/Influence-of-Anxiety-and-Threat-on-Cognitive-Map-Learning")
+setwd("~/Documents/GitHub/Anxiety_CognitiveMaps_Preprint")
 library(plotrix)
 library(ggplot2)
 library(gridExtra)
@@ -12,7 +12,7 @@ library(tidyverse)
 library(psycho)
 
 #path reference
-data_path <- '/Users/brookesevchik/Box/Data/Anxiety_Cognitive_Maps/all_participants/combinedData_Anxiety_Cognitive_Maps.csv'
+data_path <- '/Users/brookesevchik/Documents/GitHub/Anxiety_CognitiveMaps_Preprint/original_data'
 
 #load data
 df <- read_csv(data_path)
