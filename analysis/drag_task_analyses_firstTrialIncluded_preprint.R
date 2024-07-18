@@ -134,7 +134,7 @@ drag_drop_analysis_df_1 <- average_scores_1 %>%
 drag_drop_analysis_df_1
 
 #join in each subjects anxiety score
-STAI_drag_drop_df_1 <- read_csv('[INSERT PATH TO STAI.CSV') #In Github, this is 'STAI.csv'
+STAI_drag_drop_df_1 <- read_csv('[INSERT PATH TO STAI.CSV]') #In Github, this is 'data/STAI.csv'
 STAI_drag_drop_df_1 <- STAI_drag_drop_df_1 %>%
   select(subjectID, anxiety_level, sumVals)
 STAI_drag_drop_df_1
