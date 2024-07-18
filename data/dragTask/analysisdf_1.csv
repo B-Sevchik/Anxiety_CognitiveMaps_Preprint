@@ -1,1 +1,203 @@
 subject,threattype,mean_score,anxiety_level,anxiety_score
+sub1,neutral,7.5,high trait anxiety,47
+sub1,threat,6.5,high trait anxiety,47
+sub10,neutral,14.833333333333334,high trait anxiety,49
+sub10,threat,19.25,high trait anxiety,49
+sub100,neutral,4,low to moderate trait anxiety,40
+sub100,threat,5.25,low to moderate trait anxiety,40
+sub101,neutral,21.583333333333332,low to moderate trait anxiety,26
+sub101,threat,24.625,low to moderate trait anxiety,26
+sub102,neutral,11.5,high trait anxiety,49
+sub102,threat,15.25,high trait anxiety,49
+sub103,neutral,16.166666666666668,low to moderate trait anxiety,33
+sub103,threat,12,low to moderate trait anxiety,33
+sub105,neutral,13.833333333333334,high trait anxiety,50
+sub105,threat,16.5,high trait anxiety,50
+sub11,neutral,6.5,high trait anxiety,52
+sub11,threat,5,high trait anxiety,52
+sub12,neutral,10,high trait anxiety,49
+sub12,threat,14.5,high trait anxiety,49
+sub13,neutral,7.166666666666667,low to moderate trait anxiety,39
+sub13,threat,8.25,low to moderate trait anxiety,39
+sub14,neutral,15.166666666666666,high trait anxiety,48
+sub14,threat,16.5,high trait anxiety,48
+sub15,neutral,11.333333333333334,high trait anxiety,52
+sub15,threat,8.25,high trait anxiety,52
+sub16,neutral,15.666666666666666,high trait anxiety,47
+sub16,threat,13.25,high trait anxiety,47
+sub17,neutral,12.38888888888889,high trait anxiety,61
+sub17,threat,9.083333333333334,high trait anxiety,61
+sub18,neutral,5.833333333333333,high trait anxiety,52
+sub18,threat,6,high trait anxiety,52
+sub19,neutral,9.5,low to moderate trait anxiety,27
+sub19,threat,9.25,low to moderate trait anxiety,27
+sub2,neutral,12.5,low to moderate trait anxiety,34
+sub2,threat,16.75,low to moderate trait anxiety,34
+sub20,neutral,5.833333333333333,high trait anxiety,45
+sub20,threat,8.625,high trait anxiety,45
+sub21,neutral,7.25,low to moderate trait anxiety,28
+sub21,threat,12.25,low to moderate trait anxiety,28
+sub22,neutral,8.333333333333334,high trait anxiety,52
+sub22,threat,8.25,high trait anxiety,52
+sub23,neutral,10.75,low to moderate trait anxiety,30
+sub23,threat,10.375,low to moderate trait anxiety,30
+sub24,neutral,6.166666666666667,high trait anxiety,50.4
+sub24,threat,8.75,high trait anxiety,50.4
+sub25,neutral,10.333333333333334,low to moderate trait anxiety,32
+sub25,threat,13,low to moderate trait anxiety,32
+sub26,neutral,8.666666666666666,high trait anxiety,51.25
+sub26,threat,8,high trait anxiety,51.25
+sub28,neutral,11.833333333333334,low to moderate trait anxiety,40
+sub28,threat,13.625,low to moderate trait anxiety,40
+sub29,neutral,21,high trait anxiety,57
+sub29,threat,18,high trait anxiety,57
+sub30,neutral,10.333333333333334,high trait anxiety,49
+sub30,threat,7.5,high trait anxiety,49
+sub31,neutral,7.25,low to moderate trait anxiety,40
+sub31,threat,7.25,low to moderate trait anxiety,40
+sub32,neutral,6.166666666666667,low to moderate trait anxiety,31
+sub32,threat,7.75,low to moderate trait anxiety,31
+sub33,neutral,6.5,high trait anxiety,47
+sub33,threat,3.25,high trait anxiety,47
+sub34,neutral,7.25,low to moderate trait anxiety,41
+sub34,threat,8.958333333333332,low to moderate trait anxiety,41
+sub35,neutral,22,high trait anxiety,52
+sub35,threat,35.5,high trait anxiety,52
+sub36,neutral,20.666666666666668,high trait anxiety,51
+sub36,threat,20.25,high trait anxiety,51
+sub37,neutral,4,low to moderate trait anxiety,29
+sub37,threat,3.75,low to moderate trait anxiety,29
+sub38,neutral,3.3333333333333335,high trait anxiety,46
+sub38,threat,5.25,high trait anxiety,46
+sub39,neutral,5.666666666666667,low to moderate trait anxiety,32
+sub39,threat,7.5,low to moderate trait anxiety,32
+sub4,neutral,3.6666666666666665,low to moderate trait anxiety,34
+sub4,threat,2.5,low to moderate trait anxiety,34
+sub40,neutral,13.416666666666666,low to moderate trait anxiety,31
+sub40,threat,10.5,low to moderate trait anxiety,31
+sub41,neutral,4.305555555555555,high trait anxiety,51
+sub41,threat,4.125,high trait anxiety,51
+sub42,neutral,19.166666666666668,low to moderate trait anxiety,36
+sub42,threat,27,low to moderate trait anxiety,36
+sub43,neutral,22,low to moderate trait anxiety,38
+sub43,threat,22.25,low to moderate trait anxiety,38
+sub44,neutral,9.666666666666666,high trait anxiety,47
+sub44,threat,11.25,high trait anxiety,47
+sub45,neutral,7.833333333333333,low to moderate trait anxiety,35
+sub45,threat,7.5,low to moderate trait anxiety,35
+sub46,neutral,14.5,low to moderate trait anxiety,42
+sub46,threat,9.5,low to moderate trait anxiety,42
+sub47,neutral,11.833333333333334,high trait anxiety,53
+sub47,threat,23,high trait anxiety,53
+sub48,neutral,11.333333333333334,high trait anxiety,56
+sub48,threat,11.5,high trait anxiety,56
+sub49,neutral,6.666666666666667,high trait anxiety,47
+sub49,threat,12.5,high trait anxiety,47
+sub5,neutral,5.166666666666667,high trait anxiety,45
+sub5,threat,5.75,high trait anxiety,45
+sub50,neutral,14,low to moderate trait anxiety,36
+sub50,threat,7.5,low to moderate trait anxiety,36
+sub51,neutral,13.166666666666666,low to moderate trait anxiety,36
+sub51,threat,4,low to moderate trait anxiety,36
+sub52,neutral,9.916666666666666,high trait anxiety,47
+sub52,threat,14.875,high trait anxiety,47
+sub53,neutral,14,high trait anxiety,49
+sub53,threat,10.25,high trait anxiety,49
+sub54,neutral,18.833333333333332,low to moderate trait anxiety,43
+sub54,threat,12,low to moderate trait anxiety,43
+sub55,neutral,5.833333333333333,high trait anxiety,55
+sub55,threat,5.625,high trait anxiety,55
+sub56,neutral,14.333333333333334,low to moderate trait anxiety,42
+sub56,threat,23.25,low to moderate trait anxiety,42
+sub57,neutral,17.666666666666668,low to moderate trait anxiety,31
+sub57,threat,21,low to moderate trait anxiety,31
+sub58,neutral,7.666666666666667,low to moderate trait anxiety,28
+sub58,threat,11.5,low to moderate trait anxiety,28
+sub59,neutral,21.666666666666668,high trait anxiety,50
+sub59,threat,21,high trait anxiety,50
+sub6,neutral,18.666666666666668,low to moderate trait anxiety,37
+sub6,threat,22,low to moderate trait anxiety,37
+sub60,neutral,16.166666666666668,high trait anxiety,49
+sub60,threat,17.75,high trait anxiety,49
+sub61,neutral,17.333333333333332,low to moderate trait anxiety,25
+sub61,threat,16,low to moderate trait anxiety,25
+sub62,neutral,7.666666666666667,high trait anxiety,47.25
+sub62,threat,7,high trait anxiety,47.25
+sub63,neutral,13.25,high trait anxiety,58
+sub63,threat,13.625,high trait anxiety,58
+sub64,neutral,17.333333333333332,low to moderate trait anxiety,24
+sub64,threat,19.25,low to moderate trait anxiety,24
+sub65,neutral,6.083333333333333,low to moderate trait anxiety,33
+sub65,threat,6,low to moderate trait anxiety,33
+sub66,neutral,10.75,low to moderate trait anxiety,31
+sub66,threat,11.125,low to moderate trait anxiety,31
+sub67,neutral,8,high trait anxiety,50
+sub67,threat,8.5,high trait anxiety,50
+sub68,neutral,13.5,high trait anxiety,46
+sub68,threat,13.75,high trait anxiety,46
+sub69,neutral,7.5,low to moderate trait anxiety,34
+sub69,threat,8.25,low to moderate trait anxiety,34
+sub7,neutral,15.333333333333334,low to moderate trait anxiety,27
+sub7,threat,18.25,low to moderate trait anxiety,27
+sub70,neutral,6.166666666666667,low to moderate trait anxiety,32
+sub70,threat,2.5,low to moderate trait anxiety,32
+sub71,neutral,5.166666666666667,high trait anxiety,52
+sub71,threat,7.75,high trait anxiety,52
+sub72,neutral,16.666666666666668,high trait anxiety,50
+sub72,threat,14.75,high trait anxiety,50
+sub73,neutral,12.833333333333334,low to moderate trait anxiety,30
+sub73,threat,10.25,low to moderate trait anxiety,30
+sub74,neutral,18.583333333333332,low to moderate trait anxiety,34
+sub74,threat,15,low to moderate trait anxiety,34
+sub75,neutral,8,high trait anxiety,50
+sub75,threat,5.75,high trait anxiety,50
+sub76,neutral,10.5,low to moderate trait anxiety,42
+sub76,threat,7.75,low to moderate trait anxiety,42
+sub77,neutral,7.166666666666667,low to moderate trait anxiety,39
+sub77,threat,9.5,low to moderate trait anxiety,39
+sub78,neutral,8.5,high trait anxiety,64
+sub78,threat,9,high trait anxiety,64
+sub79,neutral,7.041666666666667,high trait anxiety,73
+sub79,threat,6.9375,high trait anxiety,73
+sub8,neutral,9,low to moderate trait anxiety,36
+sub8,threat,11.5,low to moderate trait anxiety,36
+sub80,neutral,21.166666666666668,low to moderate trait anxiety,35
+sub80,threat,21,low to moderate trait anxiety,35
+sub81,neutral,11.166666666666666,high trait anxiety,51.7
+sub81,threat,8.75,high trait anxiety,51.7
+sub82,neutral,10.333333333333334,low to moderate trait anxiety,26
+sub82,threat,13.5,low to moderate trait anxiety,26
+sub83,neutral,4.666666666666667,low to moderate trait anxiety,40
+sub83,threat,6.25,low to moderate trait anxiety,40
+sub84,neutral,10.833333333333334,high trait anxiety,52
+sub84,threat,14.5,high trait anxiety,52
+sub85,neutral,20,low to moderate trait anxiety,37
+sub85,threat,15.5,low to moderate trait anxiety,37
+sub86,neutral,6.333333333333333,high trait anxiety,48
+sub86,threat,6,high trait anxiety,48
+sub87,neutral,11.166666666666666,low to moderate trait anxiety,36
+sub87,threat,13.25,low to moderate trait anxiety,36
+sub88,neutral,7.5,low to moderate trait anxiety,29
+sub88,threat,7.75,low to moderate trait anxiety,29
+sub89,neutral,17.666666666666668,high trait anxiety,50
+sub89,threat,16.5,high trait anxiety,50
+sub9,neutral,5.666666666666667,low to moderate trait anxiety,32
+sub9,threat,4,low to moderate trait anxiety,32
+sub90,neutral,18.666666666666668,low to moderate trait anxiety,35
+sub90,threat,24,low to moderate trait anxiety,35
+sub92,neutral,7.166666666666667,high trait anxiety,51
+sub92,threat,4.75,high trait anxiety,51
+sub93,neutral,20.333333333333332,low to moderate trait anxiety,33
+sub93,threat,14,low to moderate trait anxiety,33
+sub94,neutral,7,low to moderate trait anxiety,34
+sub94,threat,6.75,low to moderate trait anxiety,34
+sub95,neutral,6.5,low to moderate trait anxiety,27
+sub95,threat,10,low to moderate trait anxiety,27
+sub96,neutral,13.666666666666666,low to moderate trait anxiety,43
+sub96,threat,12.25,low to moderate trait anxiety,43
+sub97,neutral,13.333333333333334,low to moderate trait anxiety,36
+sub97,threat,9.25,low to moderate trait anxiety,36
+sub98,neutral,5.388888888888888,low to moderate trait anxiety,39
+sub98,threat,5.333333333333333,low to moderate trait anxiety,39
+sub99,neutral,13.833333333333334,low to moderate trait anxiety,37
+sub99,threat,9,low to moderate trait anxiety,37
