@@ -1,5 +1,5 @@
 #This script manipulates the data frame for drag task analyses, then also runs the ANOVA to determine statistical significance and creates plots for drag task.
-#DATA PATHS TO CHANGE: lines 5, 15, 137
+#DATA PATHS TO CHANGE: lines 5, 15
 
 #SET WORKING DIRECTORY TO WHAT YOU WANT IT TO BE!
 setwd("~/Documents/GitHub/Anxiety_CognitiveMaps_Preprint")
@@ -134,7 +134,7 @@ drag_drop_analysis_df_1 <- average_scores_1 %>%
 drag_drop_analysis_df_1
 
 #join in each subjects anxiety score
-STAI_drag_drop_df_1 <- read_csv('[INSERT PATH TO STAI.CSV]') #In Github, this is 'data/STAI.csv'
+STAI_drag_drop_df_1 <- read_csv('data/STAI.csv')
 STAI_drag_drop_df_1 <- STAI_drag_drop_df_1 %>%
   select(subjectID, anxiety_level, sumVals)
 STAI_drag_drop_df_1
