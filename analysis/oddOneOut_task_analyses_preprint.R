@@ -1,4 +1,5 @@
 ##This script manipulates the data frame for odd one out task analyses, then also runs the ANOVA to determine statistical significance and creates plots for the odd one out task.
+#DATA PATHS TO CHANGE: lines 5, 18
 
 #SET WORKING DIRECTORY TO WHAT YOU WANT IT TO BE!
 setwd("~/Documents/GitHub/Anxiety_CognitiveMaps_Preprint")
@@ -100,8 +101,7 @@ ooo_model_3 <- aov(mean_acc ~ target_threat + anxiety_level + nontarget_threat +
 ooo_model_3
 result_ooo_model_3 <- summary(ooo_model_3)
 result_ooo_model_3
-write_csv(subject_acc_ooo_df, "/Users/brookesevchik/Downloads/file_for_Raphael.csv")
-tidy(ooo_model_3)
+#tidy(ooo_model_3)
 
 library(emmeans)
 emm <- emmeans(ooo_model_3, ~ target_threat | anxiety_level)
