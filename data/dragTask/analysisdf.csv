@@ -1,1 +1,45 @@
 subject,threattype,mean_score,anxiety_level,anxiety_score
+sub100,neutral,1.8333333333333333,low to moderate trait anxiety,40
+sub100,threat,2,low to moderate trait anxiety,40
+sub101,neutral,7,low to moderate trait anxiety,26
+sub101,threat,3.75,low to moderate trait anxiety,26
+sub17,neutral,6.083333333333333,high trait anxiety,61
+sub17,threat,5.625,high trait anxiety,61
+sub20,neutral,1.1666666666666667,high trait anxiety,45
+sub20,threat,1.25,high trait anxiety,45
+sub21,neutral,6.666666666666667,low to moderate trait anxiety,28
+sub21,threat,5,low to moderate trait anxiety,28
+sub23,neutral,1.3333333333333333,low to moderate trait anxiety,30
+sub23,threat,1,low to moderate trait anxiety,30
+sub28,neutral,5,low to moderate trait anxiety,40
+sub28,threat,5.25,low to moderate trait anxiety,40
+sub31,neutral,1.1666666666666667,low to moderate trait anxiety,40
+sub31,threat,1.25,low to moderate trait anxiety,40
+sub34,neutral,7.5,low to moderate trait anxiety,41
+sub34,threat,9.4,low to moderate trait anxiety,41
+sub37,neutral,2.1666666666666665,low to moderate trait anxiety,29
+sub37,threat,1.5,low to moderate trait anxiety,29
+sub38,neutral,3.8333333333333335,high trait anxiety,46
+sub38,threat,4.5,high trait anxiety,46
+sub40,neutral,1.5,low to moderate trait anxiety,31
+sub40,threat,1.25,low to moderate trait anxiety,31
+sub41,neutral,1.8666666666666667,high trait anxiety,51
+sub41,threat,1.85,high trait anxiety,51
+sub45,neutral,1.5,low to moderate trait anxiety,35
+sub45,threat,1.5,low to moderate trait anxiety,35
+sub52,neutral,2.5,high trait anxiety,47
+sub52,threat,2.5,high trait anxiety,47
+sub55,neutral,1.3333333333333333,high trait anxiety,55
+sub55,threat,1.5,high trait anxiety,55
+sub63,neutral,10.5,high trait anxiety,58
+sub63,threat,15,high trait anxiety,58
+sub65,neutral,6.166666666666667,low to moderate trait anxiety,33
+sub65,threat,8.5,low to moderate trait anxiety,33
+sub66,neutral,1.3333333333333333,low to moderate trait anxiety,31
+sub66,threat,1,low to moderate trait anxiety,31
+sub74,neutral,1.6666666666666667,low to moderate trait anxiety,34
+sub74,threat,1,low to moderate trait anxiety,34
+sub79,neutral,4.444444444444445,high trait anxiety,73
+sub79,threat,3.8333333333333335,high trait anxiety,73
+sub98,neutral,2.25,low to moderate trait anxiety,39
+sub98,threat,2.125,low to moderate trait anxiety,39

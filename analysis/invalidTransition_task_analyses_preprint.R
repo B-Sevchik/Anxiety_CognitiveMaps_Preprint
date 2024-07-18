@@ -1,4 +1,5 @@
 ##This script manipulates the data frame for illegal transition task analyses, then also runs the ANOVA to determine statistical significance and creates plots for illegal transition task.
+#DATA PATHS TO CHANGE: lines 5, 19
 
 #SET WORKING DIRECTORY TO WHAT YOU WANT IT TO BE!
 setwd("~/Documents/GitHub/Anxiety_CognitiveMaps_Preprint")
