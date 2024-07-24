@@ -1,0 +1,336 @@
+subject,target_threat,nontarget_threat,mean_acc,anxiety_level
+sub1,neutral,has_threat,1,high trait anxiety
+sub1,neutral,no_threat,1,high trait anxiety
+sub1,threat,has_threat,1,high trait anxiety
+sub1,threat,no_threat,0.75,high trait anxiety
+sub10,neutral,has_threat,0.8333333333333334,high trait anxiety
+sub10,neutral,no_threat,0.9166666666666666,high trait anxiety
+sub10,threat,has_threat,0.5,high trait anxiety
+sub10,threat,no_threat,1,high trait anxiety
+sub100,neutral,has_threat,0.9333333333333333,low to moderate trait anxiety
+sub100,threat,has_threat,1,low to moderate trait anxiety
+sub100,threat,no_threat,1,low to moderate trait anxiety
+sub101,neutral,has_threat,0.9666666666666667,low to moderate trait anxiety
+sub101,threat,has_threat,1,low to moderate trait anxiety
+sub101,threat,no_threat,1,low to moderate trait anxiety
+sub102,neutral,has_threat,1,high trait anxiety
+sub102,neutral,no_threat,0.8333333333333334,high trait anxiety
+sub102,threat,has_threat,0.9444444444444444,high trait anxiety
+sub102,threat,no_threat,1,high trait anxiety
+sub103,neutral,has_threat,1,low to moderate trait anxiety
+sub103,neutral,no_threat,1,low to moderate trait anxiety
+sub103,threat,has_threat,1,low to moderate trait anxiety
+sub103,threat,no_threat,1,low to moderate trait anxiety
+sub105,neutral,has_threat,1,high trait anxiety
+sub105,neutral,no_threat,1,high trait anxiety
+sub105,threat,has_threat,1,high trait anxiety
+sub105,threat,no_threat,1,high trait anxiety
+sub11,neutral,has_threat,1,high trait anxiety
+sub11,neutral,no_threat,1,high trait anxiety
+sub11,threat,has_threat,0.9444444444444444,high trait anxiety
+sub12,neutral,has_threat,1,high trait anxiety
+sub12,neutral,no_threat,1,high trait anxiety
+sub12,threat,has_threat,1,high trait anxiety
+sub13,neutral,has_threat,0.9583333333333334,low to moderate trait anxiety
+sub13,threat,has_threat,0.8333333333333334,low to moderate trait anxiety
+sub13,threat,no_threat,1,low to moderate trait anxiety
+sub14,neutral,has_threat,0.875,high trait anxiety
+sub14,threat,has_threat,0.9444444444444444,high trait anxiety
+sub14,threat,no_threat,1,high trait anxiety
+sub15,neutral,has_threat,0.9444444444444444,high trait anxiety
+sub15,neutral,no_threat,1,high trait anxiety
+sub15,threat,has_threat,0.9166666666666666,high trait anxiety
+sub15,threat,no_threat,1,high trait anxiety
+sub16,neutral,has_threat,1,high trait anxiety
+sub16,neutral,no_threat,1,high trait anxiety
+sub16,threat,has_threat,1,high trait anxiety
+sub17,neutral,has_threat,0.9583333333333334,high trait anxiety
+sub17,neutral,no_threat,1,high trait anxiety
+sub17,threat,has_threat,0.8888888888888888,high trait anxiety
+sub18,neutral,has_threat,1,high trait anxiety
+sub18,threat,has_threat,0.9444444444444444,high trait anxiety
+sub18,threat,no_threat,0.6666666666666666,high trait anxiety
+sub19,neutral,has_threat,0.9583333333333334,low to moderate trait anxiety
+sub19,threat,has_threat,1,low to moderate trait anxiety
+sub2,neutral,has_threat,0.8888888888888888,low to moderate trait anxiety
+sub2,neutral,no_threat,1,low to moderate trait anxiety
+sub2,threat,has_threat,0.8333333333333334,low to moderate trait anxiety
+sub20,neutral,has_threat,1,high trait anxiety
+sub20,neutral,no_threat,0.6666666666666666,high trait anxiety
+sub20,threat,has_threat,1,high trait anxiety
+sub21,neutral,has_threat,0.5833333333333334,low to moderate trait anxiety
+sub21,neutral,no_threat,0.8333333333333334,low to moderate trait anxiety
+sub21,threat,has_threat,0.6111111111111112,low to moderate trait anxiety
+sub21,threat,no_threat,0.8333333333333334,low to moderate trait anxiety
+sub22,neutral,has_threat,1,high trait anxiety
+sub22,neutral,no_threat,1,high trait anxiety
+sub22,threat,has_threat,1,high trait anxiety
+sub22,threat,no_threat,1,high trait anxiety
+sub23,neutral,has_threat,0.9444444444444444,low to moderate trait anxiety
+sub23,neutral,no_threat,1,low to moderate trait anxiety
+sub23,threat,has_threat,1,low to moderate trait anxiety
+sub23,threat,no_threat,1,low to moderate trait anxiety
+sub24,neutral,has_threat,0.7916666666666666,high trait anxiety
+sub24,threat,has_threat,0.875,high trait anxiety
+sub25,neutral,has_threat,0.75,low to moderate trait anxiety
+sub25,neutral,no_threat,1,low to moderate trait anxiety
+sub25,threat,has_threat,1,low to moderate trait anxiety
+sub25,threat,no_threat,0.75,low to moderate trait anxiety
+sub26,neutral,has_threat,0.8888888888888888,high trait anxiety
+sub26,neutral,no_threat,0.9166666666666666,high trait anxiety
+sub26,threat,has_threat,0.7777777777777778,high trait anxiety
+sub28,neutral,has_threat,1,low to moderate trait anxiety
+sub28,neutral,no_threat,1,low to moderate trait anxiety
+sub28,threat,has_threat,0.9166666666666666,low to moderate trait anxiety
+sub28,threat,no_threat,1,low to moderate trait anxiety
+sub29,neutral,has_threat,1,high trait anxiety
+sub29,neutral,no_threat,1,high trait anxiety
+sub29,threat,has_threat,1,high trait anxiety
+sub30,neutral,has_threat,1,high trait anxiety
+sub30,threat,has_threat,1,high trait anxiety
+sub31,neutral,has_threat,1,low to moderate trait anxiety
+sub31,neutral,no_threat,1,low to moderate trait anxiety
+sub31,threat,has_threat,1,low to moderate trait anxiety
+sub31,threat,no_threat,1,low to moderate trait anxiety
+sub32,neutral,has_threat,0.875,low to moderate trait anxiety
+sub32,neutral,no_threat,0.8333333333333334,low to moderate trait anxiety
+sub32,threat,has_threat,0.8333333333333334,low to moderate trait anxiety
+sub33,neutral,has_threat,0.41666666666666663,high trait anxiety
+sub33,neutral,no_threat,0.8333333333333334,high trait anxiety
+sub33,threat,has_threat,0.9166666666666666,high trait anxiety
+sub33,threat,no_threat,0.6666666666666666,high trait anxiety
+sub34,neutral,has_threat,0.9444444444444444,low to moderate trait anxiety
+sub34,neutral,no_threat,1,low to moderate trait anxiety
+sub34,threat,has_threat,1,low to moderate trait anxiety
+sub34,threat,no_threat,0.9166666666666666,low to moderate trait anxiety
+sub35,neutral,has_threat,1,high trait anxiety
+sub35,neutral,no_threat,0.8333333333333334,high trait anxiety
+sub35,threat,has_threat,0.875,high trait anxiety
+sub36,neutral,has_threat,1,high trait anxiety
+sub36,neutral,no_threat,1,high trait anxiety
+sub36,threat,has_threat,1,high trait anxiety
+sub36,threat,no_threat,1,high trait anxiety
+sub37,neutral,has_threat,0.9333333333333333,low to moderate trait anxiety
+sub37,threat,has_threat,0.9444444444444444,low to moderate trait anxiety
+sub38,neutral,has_threat,1,high trait anxiety
+sub38,threat,has_threat,0.8888888888888888,high trait anxiety
+sub38,threat,no_threat,1,high trait anxiety
+sub39,neutral,has_threat,1,low to moderate trait anxiety
+sub39,neutral,no_threat,1,low to moderate trait anxiety
+sub39,threat,has_threat,1,low to moderate trait anxiety
+sub4,neutral,has_threat,1,low to moderate trait anxiety
+sub4,neutral,no_threat,0.9166666666666666,low to moderate trait anxiety
+sub4,threat,has_threat,0.8333333333333334,low to moderate trait anxiety
+sub4,threat,no_threat,1,low to moderate trait anxiety
+sub40,neutral,has_threat,1,low to moderate trait anxiety
+sub40,threat,has_threat,1,low to moderate trait anxiety
+sub40,threat,no_threat,1,low to moderate trait anxiety
+sub41,neutral,has_threat,0.9444444444444444,high trait anxiety
+sub41,neutral,no_threat,1,high trait anxiety
+sub41,threat,has_threat,1,high trait anxiety
+sub41,threat,no_threat,0.9166666666666666,high trait anxiety
+sub42,neutral,has_threat,1,low to moderate trait anxiety
+sub42,neutral,no_threat,1,low to moderate trait anxiety
+sub42,threat,has_threat,1,low to moderate trait anxiety
+sub42,threat,no_threat,1,low to moderate trait anxiety
+sub43,neutral,has_threat,0.9166666666666666,low to moderate trait anxiety
+sub43,neutral,no_threat,0.8888888888888888,low to moderate trait anxiety
+sub43,threat,has_threat,1,low to moderate trait anxiety
+sub43,threat,no_threat,1,low to moderate trait anxiety
+sub44,neutral,has_threat,1,high trait anxiety
+sub44,neutral,no_threat,1,high trait anxiety
+sub44,threat,has_threat,1,high trait anxiety
+sub44,threat,no_threat,1,high trait anxiety
+sub45,neutral,has_threat,0.9583333333333334,low to moderate trait anxiety
+sub45,neutral,no_threat,0.8333333333333334,low to moderate trait anxiety
+sub45,threat,has_threat,0.8333333333333333,low to moderate trait anxiety
+sub45,threat,no_threat,1,low to moderate trait anxiety
+sub46,neutral,has_threat,1,low to moderate trait anxiety
+sub46,neutral,no_threat,0.9166666666666666,low to moderate trait anxiety
+sub46,threat,has_threat,0.9583333333333334,low to moderate trait anxiety
+sub47,neutral,has_threat,1,high trait anxiety
+sub47,threat,has_threat,1,high trait anxiety
+sub47,threat,no_threat,1,high trait anxiety
+sub48,neutral,has_threat,1,high trait anxiety
+sub48,threat,has_threat,1,high trait anxiety
+sub48,threat,no_threat,1,high trait anxiety
+sub49,neutral,has_threat,0.8333333333333334,high trait anxiety
+sub49,threat,has_threat,0.9166666666666666,high trait anxiety
+sub49,threat,no_threat,0.9166666666666666,high trait anxiety
+sub5,neutral,has_threat,0.9583333333333334,high trait anxiety
+sub5,threat,has_threat,1,high trait anxiety
+sub5,threat,no_threat,1,high trait anxiety
+sub50,neutral,has_threat,0.9444444444444444,low to moderate trait anxiety
+sub50,neutral,no_threat,1,low to moderate trait anxiety
+sub50,threat,has_threat,1,low to moderate trait anxiety
+sub50,threat,no_threat,0.9166666666666666,low to moderate trait anxiety
+sub51,neutral,has_threat,0.9583333333333334,low to moderate trait anxiety
+sub51,threat,has_threat,1,low to moderate trait anxiety
+sub51,threat,no_threat,1,low to moderate trait anxiety
+sub52,neutral,has_threat,1,high trait anxiety
+sub52,threat,has_threat,1,high trait anxiety
+sub52,threat,no_threat,0.6666666666666666,high trait anxiety
+sub53,neutral,has_threat,1,high trait anxiety
+sub53,threat,has_threat,0.9444444444444444,high trait anxiety
+sub53,threat,no_threat,1,high trait anxiety
+sub54,neutral,has_threat,1,low to moderate trait anxiety
+sub54,neutral,no_threat,1,low to moderate trait anxiety
+sub54,threat,has_threat,0.8333333333333334,low to moderate trait anxiety
+sub54,threat,no_threat,0.8333333333333334,low to moderate trait anxiety
+sub55,neutral,has_threat,1,high trait anxiety
+sub55,neutral,no_threat,1,high trait anxiety
+sub55,threat,has_threat,1,high trait anxiety
+sub55,threat,no_threat,1,high trait anxiety
+sub56,neutral,has_threat,0.75,low to moderate trait anxiety
+sub56,neutral,no_threat,1,low to moderate trait anxiety
+sub56,threat,has_threat,0.7916666666666667,low to moderate trait anxiety
+sub57,neutral,has_threat,1,low to moderate trait anxiety
+sub57,threat,no_threat,1,low to moderate trait anxiety
+sub58,neutral,has_threat,1,low to moderate trait anxiety
+sub58,neutral,no_threat,0.9166666666666666,low to moderate trait anxiety
+sub58,threat,has_threat,0.8333333333333334,low to moderate trait anxiety
+sub58,threat,no_threat,1,low to moderate trait anxiety
+sub59,neutral,has_threat,0.9444444444444444,high trait anxiety
+sub59,neutral,no_threat,0.8333333333333334,high trait anxiety
+sub59,threat,has_threat,0.9444444444444444,high trait anxiety
+sub59,threat,no_threat,1,high trait anxiety
+sub6,neutral,has_threat,1,low to moderate trait anxiety
+sub6,neutral,no_threat,1,low to moderate trait anxiety
+sub6,threat,has_threat,1,low to moderate trait anxiety
+sub6,threat,no_threat,1,low to moderate trait anxiety
+sub60,neutral,has_threat,0.9166666666666666,high trait anxiety
+sub60,neutral,no_threat,0.7222222222222222,high trait anxiety
+sub60,threat,has_threat,0.6666666666666666,high trait anxiety
+sub60,threat,no_threat,1,high trait anxiety
+sub61,neutral,has_threat,0.8888888888888888,low to moderate trait anxiety
+sub61,neutral,no_threat,1,low to moderate trait anxiety
+sub61,threat,has_threat,0.8888888888888888,low to moderate trait anxiety
+sub61,threat,no_threat,0.8333333333333334,low to moderate trait anxiety
+sub62,neutral,has_threat,0.9444444444444444,high trait anxiety
+sub62,neutral,no_threat,1,high trait anxiety
+sub62,threat,has_threat,0.9166666666666666,high trait anxiety
+sub62,threat,no_threat,1,high trait anxiety
+sub63,neutral,has_threat,1,high trait anxiety
+sub63,neutral,no_threat,1,high trait anxiety
+sub63,threat,has_threat,1,high trait anxiety
+sub64,neutral,has_threat,0.9583333333333334,low to moderate trait anxiety
+sub64,threat,has_threat,0.875,low to moderate trait anxiety
+sub65,neutral,has_threat,1,low to moderate trait anxiety
+sub65,neutral,no_threat,1,low to moderate trait anxiety
+sub65,threat,has_threat,1,low to moderate trait anxiety
+sub66,neutral,has_threat,0.8333333333333334,low to moderate trait anxiety
+sub66,neutral,no_threat,1,low to moderate trait anxiety
+sub66,threat,has_threat,0.8333333333333333,low to moderate trait anxiety
+sub67,neutral,has_threat,0.9444444444444444,high trait anxiety
+sub67,neutral,no_threat,1,high trait anxiety
+sub67,threat,has_threat,1,high trait anxiety
+sub67,threat,no_threat,0.8333333333333334,high trait anxiety
+sub68,neutral,has_threat,0.9166666666666666,high trait anxiety
+sub68,neutral,no_threat,1,high trait anxiety
+sub68,threat,has_threat,1,high trait anxiety
+sub68,threat,no_threat,1,high trait anxiety
+sub69,neutral,has_threat,1,low to moderate trait anxiety
+sub69,neutral,no_threat,0.8333333333333334,low to moderate trait anxiety
+sub69,threat,has_threat,1,low to moderate trait anxiety
+sub7,neutral,has_threat,1,low to moderate trait anxiety
+sub7,neutral,no_threat,1,low to moderate trait anxiety
+sub7,threat,has_threat,1,low to moderate trait anxiety
+sub7,threat,no_threat,1,low to moderate trait anxiety
+sub70,neutral,has_threat,0.7222222222222222,low to moderate trait anxiety
+sub70,neutral,no_threat,0.8333333333333334,low to moderate trait anxiety
+sub70,threat,has_threat,0.8333333333333334,low to moderate trait anxiety
+sub71,neutral,has_threat,0.9583333333333334,high trait anxiety
+sub71,threat,has_threat,0.75,high trait anxiety
+sub71,threat,no_threat,0.9166666666666666,high trait anxiety
+sub72,neutral,has_threat,0.8888888888888888,high trait anxiety
+sub72,neutral,no_threat,0.6666666666666666,high trait anxiety
+sub72,threat,has_threat,0.9166666666666666,high trait anxiety
+sub73,neutral,has_threat,0.9583333333333334,low to moderate trait anxiety
+sub73,threat,has_threat,0.9166666666666666,low to moderate trait anxiety
+sub74,neutral,has_threat,1,low to moderate trait anxiety
+sub74,threat,has_threat,1,low to moderate trait anxiety
+sub74,threat,no_threat,1,low to moderate trait anxiety
+sub75,neutral,has_threat,0.9444444444444444,high trait anxiety
+sub75,neutral,no_threat,1,high trait anxiety
+sub75,threat,has_threat,0.9166666666666666,high trait anxiety
+sub76,neutral,has_threat,1,low to moderate trait anxiety
+sub76,neutral,no_threat,1,low to moderate trait anxiety
+sub76,threat,has_threat,1,low to moderate trait anxiety
+sub76,threat,no_threat,1,low to moderate trait anxiety
+sub77,neutral,has_threat,0.875,low to moderate trait anxiety
+sub77,threat,has_threat,1,low to moderate trait anxiety
+sub77,threat,no_threat,1,low to moderate trait anxiety
+sub78,neutral,has_threat,1,high trait anxiety
+sub78,threat,has_threat,1,high trait anxiety
+sub79,neutral,has_threat,0.9166666666666666,high trait anxiety
+sub79,threat,has_threat,0.8888888888888888,high trait anxiety
+sub79,threat,no_threat,1,high trait anxiety
+sub8,neutral,has_threat,0.4444444444444444,low to moderate trait anxiety
+sub8,neutral,no_threat,0.6666666666666667,low to moderate trait anxiety
+sub8,threat,has_threat,0.5,low to moderate trait anxiety
+sub8,threat,no_threat,0.41666666666666663,low to moderate trait anxiety
+sub80,neutral,has_threat,1,low to moderate trait anxiety
+sub80,neutral,no_threat,0.8333333333333334,low to moderate trait anxiety
+sub80,threat,has_threat,0.6666666666666666,low to moderate trait anxiety
+sub80,threat,no_threat,0.9166666666666666,low to moderate trait anxiety
+sub81,neutral,has_threat,1,high trait anxiety
+sub81,neutral,no_threat,1,high trait anxiety
+sub81,threat,has_threat,0.9444444444444444,high trait anxiety
+sub82,neutral,has_threat,1,low to moderate trait anxiety
+sub82,neutral,no_threat,1,low to moderate trait anxiety
+sub82,threat,has_threat,1,low to moderate trait anxiety
+sub82,threat,no_threat,1,low to moderate trait anxiety
+sub83,neutral,has_threat,0.9583333333333334,low to moderate trait anxiety
+sub83,threat,has_threat,0.9444444444444444,low to moderate trait anxiety
+sub83,threat,no_threat,1,low to moderate trait anxiety
+sub84,neutral,has_threat,1,high trait anxiety
+sub84,threat,has_threat,0.9583333333333334,high trait anxiety
+sub85,neutral,has_threat,0.9166666666666666,low to moderate trait anxiety
+sub85,threat,has_threat,0.7777777777777778,low to moderate trait anxiety
+sub85,threat,no_threat,0.6666666666666666,low to moderate trait anxiety
+sub86,neutral,has_threat,0.9166666666666666,high trait anxiety
+sub86,threat,has_threat,0.9583333333333334,high trait anxiety
+sub87,neutral,has_threat,1,low to moderate trait anxiety
+sub87,neutral,no_threat,0.9166666666666666,low to moderate trait anxiety
+sub87,threat,has_threat,1,low to moderate trait anxiety
+sub87,threat,no_threat,1,low to moderate trait anxiety
+sub88,neutral,has_threat,0.9444444444444444,low to moderate trait anxiety
+sub88,neutral,no_threat,1,low to moderate trait anxiety
+sub88,threat,has_threat,1,low to moderate trait anxiety
+sub89,neutral,has_threat,0.9166666666666666,high trait anxiety
+sub89,neutral,no_threat,0.75,high trait anxiety
+sub89,threat,has_threat,0.7916666666666666,high trait anxiety
+sub9,neutral,has_threat,1,low to moderate trait anxiety
+sub9,neutral,no_threat,1,low to moderate trait anxiety
+sub9,threat,has_threat,1,low to moderate trait anxiety
+sub90,neutral,has_threat,0.7222222222222222,low to moderate trait anxiety
+sub90,neutral,no_threat,0.8333333333333334,low to moderate trait anxiety
+sub90,threat,has_threat,1,low to moderate trait anxiety
+sub90,threat,no_threat,0.9166666666666666,low to moderate trait anxiety
+sub92,neutral,has_threat,1,high trait anxiety
+sub92,threat,has_threat,0.8333333333333334,high trait anxiety
+sub92,threat,no_threat,1,high trait anxiety
+sub93,neutral,has_threat,0.7777777777777778,low to moderate trait anxiety
+sub93,neutral,no_threat,0.8333333333333334,low to moderate trait anxiety
+sub93,threat,has_threat,0.9166666666666666,low to moderate trait anxiety
+sub94,neutral,has_threat,1,low to moderate trait anxiety
+sub94,neutral,no_threat,1,low to moderate trait anxiety
+sub94,threat,has_threat,0.9583333333333334,low to moderate trait anxiety
+sub95,neutral,has_threat,1,low to moderate trait anxiety
+sub95,neutral,no_threat,1,low to moderate trait anxiety
+sub95,threat,has_threat,1,low to moderate trait anxiety
+sub95,threat,no_threat,0.8333333333333334,low to moderate trait anxiety
+sub96,neutral,has_threat,0.9444444444444444,low to moderate trait anxiety
+sub96,neutral,no_threat,1,low to moderate trait anxiety
+sub96,threat,has_threat,0.6666666666666666,low to moderate trait anxiety
+sub96,threat,no_threat,0.8333333333333333,low to moderate trait anxiety
+sub97,neutral,has_threat,0.875,low to moderate trait anxiety
+sub97,neutral,no_threat,0.8333333333333334,low to moderate trait anxiety
+sub97,threat,has_threat,0.8333333333333333,low to moderate trait anxiety
+sub97,threat,no_threat,0.8333333333333334,low to moderate trait anxiety
+sub98,neutral,has_threat,1,low to moderate trait anxiety
+sub98,neutral,no_threat,1,low to moderate trait anxiety
+sub98,threat,has_threat,0.9583333333333334,low to moderate trait anxiety
+sub99,neutral,has_threat,0.9166666666666666,low to moderate trait anxiety
+sub99,neutral,no_threat,1,low to moderate trait anxiety
+sub99,threat,has_threat,0.9166666666666666,low to moderate trait anxiety

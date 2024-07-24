@@ -1,13 +1,14 @@
-#This script is for preprocessing. It creates the original csv files for each of the tasks.
+#This script is for preprocessing, it organizes the raw data for each of the tasks from the original data.
 #It also excludes the subjects for not meeting requirements for each of the three tasks.
-#Run preprocess before you run any other script.
+#Run preprocess before you run any other script, as well as download original_data and original_STAI_data_df from Github.
+#data paths to insert: line 6, 11
 
-setwd("~/Documents/GitHub/Anxiety_CognitiveMaps_Preprint")
+setwd("[INSERT PATH TO GITHUB DIRECTORY IN COMPUTER FILE SYSTEM]")
 
 library (dplyr)
 library(tidyverse)
 
-df <- read_csv('/Users/brookesevchik/Documents/GitHub/Anxiety_CognitiveMaps_Preprint/original_data')
+df <- read_csv('[INSERT PATH TO original_data FILE FROM GITHUB]')
 
 #DRAG TASK exclude people from drag task if they have reached the 10th trial and still haven't learned it
 drag_df <- df %>%
