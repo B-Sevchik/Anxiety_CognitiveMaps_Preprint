@@ -1,14 +1,16 @@
-#This script calculates the anxiety scores for participants.
+#This script calculates the anxiety scores for participants according to the State-Trait Anxiety Inventory.
+#With preprocessing script, this script should be run before running any other analyses.
+#data paths to insert: lines 6, 13
 
 #set-up
-setwd("~/Documents/GitHub/Anxiety_CognitiveMaps_Preprint")
+setwd("[INSERT PATH TO GITHUB DIRECTORY IN COMPUTER FILE SYSTEM]")
 library(tidyverse)
 library(dplyr)
 
 #BE SURE TO EDIT PATH NAMES EACH TIME YOU RUN SCRIPT
 
 #path references
-data_path <- '/Users/brookesevchik/Documents/GitHub/Anxiety_CognitiveMaps_Preprint/original_STAI_data_df' #EDIT PATH NAME EACH TIME
+data_path <- '[INSERT PATH TO original_STAI_data_df FROM GITHUB]' 
 
 #load data
 STAI_df <- read_csv(data_path)

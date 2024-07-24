@@ -1,8 +1,7 @@
 #This script manipulates the data frame for drag task analyses, then also runs the ANOVA to determine statistical significance and creates plots for drag task.
-#DATA PATHS TO CHANGE: lines 5, 15
+#data paths to insert: lines 4, 13, 135
 
-#SET WORKING DIRECTORY TO WHAT YOU WANT IT TO BE!
-setwd("~/Documents/GitHub/Anxiety_CognitiveMaps_Preprint")
+setwd("[INSERT PATH TO GITHUB DIRECTORY IN COMPUTER FILE SYSTEM]")
 library(plotrix)
 library(ggplot2)
 library(gridExtra)
@@ -11,8 +10,7 @@ library(readr)
 library(ggplot2)
 library(tidyr)
 
-#CHANGE DATA PATH TO WHERE THE FILE WITH THE ORIGINAL DATA FILE YOU PULLED FROM GITHUB IS STORED ON YOUR COMPUTER!
-df <- read_csv('[INSERT DATA PATH') #In Github, this is the 'original_data' file
+df <- read_csv('[INSERT PATH TO original_data FILE FROM GITHUB]')
 
 check_answer_df <- df %>%
   filter(sectionType == 'dragTaskCheckAnswerEvent') %>%
@@ -134,7 +132,7 @@ drag_drop_analysis_df <- average_scores %>%
 drag_drop_analysis_df
 
 #join in each subjects anxiety score
-STAI_drag_drop_df <- read_csv('data/STAI.csv')
+STAI_drag_drop_df <- read_csv('[INSERT PATH TO data/STAI.csv FROM GITHUB]')
 STAI_drag_drop_df <- STAI_drag_drop_df %>%
   select(subjectID, anxiety_level, sumVals)
 STAI_drag_drop_df

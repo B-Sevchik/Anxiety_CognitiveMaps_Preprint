@@ -1,10 +1,13 @@
+#This script analyzes data and creates a plot of each individual's learning trajectory during the drag & drop task as they learn the network structure, and creates an average learning trajectory.
+#drag_task_analyses_preprint.R must be run before this script.
+#data paths to insert: line 9
+
 library(tidyverse)
 library(dplyr)
 
 #load in check_answer_df
-#SET WORKING DIRECTORY TO WHAT YOU WANT IT TO BE!
-setwd("~/Documents/GitHub/Anxiety_CognitiveMaps_Preprint")
-check_answer_df <- read_csv('data/dragTask/checkAnswer.csv') #MAY HAVE TO EDIT THIS DATA PATH IN CORRESPONDENCE TO WHERE checkAnswer.csv (can download from GitHub), is stored on your computer.
+setwd("[INSERT PATH TO GITHUB DIRECTORY IN COMPUTER FILE SYSTEM]")
+check_answer_df <- read_csv('data/dragTask/checkAnswer.csv') #must run drag_task_analyses_preprint before running this script for this to work.
 check_answer_df
 
 attempts_per_trial <- check_answer_df %>% 

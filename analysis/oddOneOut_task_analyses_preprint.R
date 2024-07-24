@@ -1,8 +1,7 @@
 ##This script manipulates the data frame for odd one out task analyses, then also runs the ANOVA to determine statistical significance and creates plots for the odd one out task.
-#DATA PATHS TO CHANGE: lines 5, 18
+#data paths to insert: lines 4, 16, 75
 
-#SET WORKING DIRECTORY TO WHAT YOU WANT IT TO BE!
-setwd("~/Documents/GitHub/Anxiety_CognitiveMaps_Preprint")
+setwd("[INSERT PATH TO GITHUB DIRECTORY IN COMPUTER FILE SYSTEM]")
 library(plotrix)
 library(ggplot2)
 library(gridExtra)
@@ -14,8 +13,7 @@ library(tidyverse)
 library(psycho)
 
 #path reference
-#CHANGE DATA PATH TO WHERE THE FILE WITH THE ORIGINAL DATA FILE YOU PULLED FROM GITHUB IS STORED ON YOUR COMPUTER!
-data_path <- '[INSERT DATA PATH]' #In Github, this is the 'original_data' file
+data_path <- '[INSERT PATH TO original_data FILE FROM GITHUB]'
 
 #load data
 df <- read_csv(data_path)
@@ -74,7 +72,7 @@ sub_mean_df <- subject_acc_ooo_df %>%
 sub_mean_df
 
 # add column of each subjects anxiety (using left join). should be code somewhere
-df_STAI_ooo <-read_csv('data/STAI.csv')
+df_STAI_ooo <-read_csv('INSERT PATH TO data/STAI.csv FROM GITHUB')
 df_STAI_ooo
 
 df_ooo_STAI_simple <- df_STAI_ooo %>%
