@@ -44,7 +44,7 @@ excluded_drag_subjects <- excluded_drag_subjects %>%
 illegal_df <- df %>% 
   filter(taskName == "illegalTransitionTask") %>% 
   select(subject, transitionType, transitionThreatKind, trialCount, blockTrialCount, block, RT, acc, activeNodeCommunityCongruency:transitionThreatKind)
-write_csv(illegal_df, 'data/illegalTransition.csv')
+write_csv(illegal_df, 'data/invalidTransition.csv')
 
 acc_illegal_df <- illegal_df %>%
   select(subject, transitionType, acc, transitionThreatKind) %>%
